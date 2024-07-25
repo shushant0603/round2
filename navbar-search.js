@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchBtn = document.getElementById("search-btn");
+
+    function activateSearch() {
+        searchInput.focus();
+    }
+
+    searchInput.addEventListener("click", activateSearch);
+    searchBtn.addEventListener("click", activateSearch);
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const hoverTextElements = document.querySelectorAll(".hover-text");
+    hoverTextElements.forEach(function(element) {
+        element.setAttribute("data-text", element.textContent);
+  });
+});
 
 
   var swiper = new Swiper('.mySwiper', {
